@@ -1,0 +1,3 @@
+C:/Users/versa/CLionProjects/Signals/cmake-build-debug/CMakeFiles/Signals.dir
+C:/Users/versa/CLionProjects/Signals/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/versa/CLionProjects/Signals/cmake-build-debug/CMakeFiles/rebuild_cache.dir
