@@ -3,4 +3,4 @@ project(Signals C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Signals program1.c program2.c)
+add_executable(Signals Prog1.c Prog2.c)
