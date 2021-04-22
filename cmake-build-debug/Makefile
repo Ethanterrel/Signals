@@ -142,32 +142,59 @@ Signals/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/build
 .PHONY : Signals/fast
 
-main.obj: main.c.obj
+program1.obj: program1.c.obj
 
-.PHONY : main.obj
+.PHONY : program1.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/main.c.obj
-.PHONY : main.c.obj
+program1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/program1.c.obj
+.PHONY : program1.c.obj
 
-main.i: main.c.i
+program1.i: program1.c.i
 
-.PHONY : main.i
+.PHONY : program1.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/main.c.i
-.PHONY : main.c.i
+program1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/program1.c.i
+.PHONY : program1.c.i
 
-main.s: main.c.s
+program1.s: program1.c.s
 
-.PHONY : main.s
+.PHONY : program1.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/main.c.s
-.PHONY : main.c.s
+program1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/program1.c.s
+.PHONY : program1.c.s
+
+program2.obj: program2.c.obj
+
+.PHONY : program2.obj
+
+# target to build an object file
+program2.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/program2.c.obj
+.PHONY : program2.c.obj
+
+program2.i: program2.c.i
+
+.PHONY : program2.i
+
+# target to preprocess a source file
+program2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/program2.c.i
+.PHONY : program2.c.i
+
+program2.s: program2.c.s
+
+.PHONY : program2.s
+
+# target to generate assembly for a file
+program2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/program2.c.s
+.PHONY : program2.c.s
 
 # Help Target
 help:
@@ -178,9 +205,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Signals
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... program1.obj
+	@echo ... program1.i
+	@echo ... program1.s
+	@echo ... program2.obj
+	@echo ... program2.i
+	@echo ... program2.s
 .PHONY : help
 
 

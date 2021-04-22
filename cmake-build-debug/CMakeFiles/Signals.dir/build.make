@@ -76,32 +76,47 @@ include CMakeFiles/Signals.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Signals.dir/flags.make
 
-CMakeFiles/Signals.dir/main.c.obj: CMakeFiles/Signals.dir/flags.make
-CMakeFiles/Signals.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\versa\CLionProjects\Signals\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Signals.dir/main.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Signals.dir\main.c.obj   -c C:\Users\versa\CLionProjects\Signals\main.c
+CMakeFiles/Signals.dir/program1.c.obj: CMakeFiles/Signals.dir/flags.make
+CMakeFiles/Signals.dir/program1.c.obj: ../program1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\versa\CLionProjects\Signals\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Signals.dir/program1.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Signals.dir\program1.c.obj   -c C:\Users\versa\CLionProjects\Signals\program1.c
 
-CMakeFiles/Signals.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Signals.dir/main.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\versa\CLionProjects\Signals\main.c > CMakeFiles\Signals.dir\main.c.i
+CMakeFiles/Signals.dir/program1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Signals.dir/program1.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\versa\CLionProjects\Signals\program1.c > CMakeFiles\Signals.dir\program1.c.i
 
-CMakeFiles/Signals.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Signals.dir/main.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\versa\CLionProjects\Signals\main.c -o CMakeFiles\Signals.dir\main.c.s
+CMakeFiles/Signals.dir/program1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Signals.dir/program1.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\versa\CLionProjects\Signals\program1.c -o CMakeFiles\Signals.dir\program1.c.s
+
+CMakeFiles/Signals.dir/program2.c.obj: CMakeFiles/Signals.dir/flags.make
+CMakeFiles/Signals.dir/program2.c.obj: ../program2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\versa\CLionProjects\Signals\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Signals.dir/program2.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Signals.dir\program2.c.obj   -c C:\Users\versa\CLionProjects\Signals\program2.c
+
+CMakeFiles/Signals.dir/program2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Signals.dir/program2.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\versa\CLionProjects\Signals\program2.c > CMakeFiles\Signals.dir\program2.c.i
+
+CMakeFiles/Signals.dir/program2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Signals.dir/program2.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\versa\CLionProjects\Signals\program2.c -o CMakeFiles\Signals.dir\program2.c.s
 
 # Object files for target Signals
 Signals_OBJECTS = \
-"CMakeFiles/Signals.dir/main.c.obj"
+"CMakeFiles/Signals.dir/program1.c.obj" \
+"CMakeFiles/Signals.dir/program2.c.obj"
 
 # External object files for target Signals
 Signals_EXTERNAL_OBJECTS =
 
-Signals.exe: CMakeFiles/Signals.dir/main.c.obj
+Signals.exe: CMakeFiles/Signals.dir/program1.c.obj
+Signals.exe: CMakeFiles/Signals.dir/program2.c.obj
 Signals.exe: CMakeFiles/Signals.dir/build.make
 Signals.exe: CMakeFiles/Signals.dir/linklibs.rsp
 Signals.exe: CMakeFiles/Signals.dir/objects1.rsp
 Signals.exe: CMakeFiles/Signals.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\versa\CLionProjects\Signals\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Signals.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\versa\CLionProjects\Signals\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Signals.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Signals.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

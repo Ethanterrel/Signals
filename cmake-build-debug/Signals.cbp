@@ -74,7 +74,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/versa/CLionProjects/Signals/main.c">
+		<Unit filename="C:/Users/versa/CLionProjects/Signals/program1.c">
+			<Option target="Signals"/>
+		</Unit>
+		<Unit filename="C:/Users/versa/CLionProjects/Signals/program2.c">
 			<Option target="Signals"/>
 		</Unit>
 		<Unit filename="C:/Users/versa/CLionProjects/Signals/CMakeLists.txt">

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Signals.dir/main.c.obj"
+  "CMakeFiles/Signals.dir/program1.c.obj"
+  "CMakeFiles/Signals.dir/program2.c.obj"
   "Signals.exe"
   "Signals.exe.manifest"
   "Signals.pdb"
