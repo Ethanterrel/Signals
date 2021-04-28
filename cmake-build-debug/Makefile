@@ -142,59 +142,59 @@ Signals/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/build
 .PHONY : Signals/fast
 
-program1.obj: program1.c.obj
+Prog1.obj: Prog1.c.obj
 
-.PHONY : program1.obj
-
-# target to build an object file
-program1.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/program1.c.obj
-.PHONY : program1.c.obj
-
-program1.i: program1.c.i
-
-.PHONY : program1.i
-
-# target to preprocess a source file
-program1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/program1.c.i
-.PHONY : program1.c.i
-
-program1.s: program1.c.s
-
-.PHONY : program1.s
-
-# target to generate assembly for a file
-program1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/program1.c.s
-.PHONY : program1.c.s
-
-program2.obj: program2.c.obj
-
-.PHONY : program2.obj
+.PHONY : Prog1.obj
 
 # target to build an object file
-program2.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/program2.c.obj
-.PHONY : program2.c.obj
+Prog1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/Prog1.c.obj
+.PHONY : Prog1.c.obj
 
-program2.i: program2.c.i
+Prog1.i: Prog1.c.i
 
-.PHONY : program2.i
+.PHONY : Prog1.i
 
 # target to preprocess a source file
-program2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/program2.c.i
-.PHONY : program2.c.i
+Prog1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/Prog1.c.i
+.PHONY : Prog1.c.i
 
-program2.s: program2.c.s
+Prog1.s: Prog1.c.s
 
-.PHONY : program2.s
+.PHONY : Prog1.s
 
 # target to generate assembly for a file
-program2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/program2.c.s
-.PHONY : program2.c.s
+Prog1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/Prog1.c.s
+.PHONY : Prog1.c.s
+
+Prog2.obj: Prog2.c.obj
+
+.PHONY : Prog2.obj
+
+# target to build an object file
+Prog2.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/Prog2.c.obj
+.PHONY : Prog2.c.obj
+
+Prog2.i: Prog2.c.i
+
+.PHONY : Prog2.i
+
+# target to preprocess a source file
+Prog2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/Prog2.c.i
+.PHONY : Prog2.c.i
+
+Prog2.s: Prog2.c.s
+
+.PHONY : Prog2.s
+
+# target to generate assembly for a file
+Prog2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Signals.dir\build.make CMakeFiles/Signals.dir/Prog2.c.s
+.PHONY : Prog2.c.s
 
 # Help Target
 help:
@@ -205,12 +205,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Signals
-	@echo ... program1.obj
-	@echo ... program1.i
-	@echo ... program1.s
-	@echo ... program2.obj
-	@echo ... program2.i
-	@echo ... program2.s
+	@echo ... Prog1.obj
+	@echo ... Prog1.i
+	@echo ... Prog1.s
+	@echo ... Prog2.obj
+	@echo ... Prog2.i
+	@echo ... Prog2.s
 .PHONY : help
 
 

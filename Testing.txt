@@ -1,0 +1,4 @@
+With my first program my sigusr1 was sending out more signals out and was not entirely cont steady for the results of my signal handler and the sigal reporter counter values. The signal handlers received most of these,
+but the signal reporter only received about half of them.  Since there were two
+signal handlers for each signal type, this means that both the handlers and the
+reporter only received almost half the signals that were sent.

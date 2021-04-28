@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/versa/CLionProjects/Signals/program1.c" "C:/Users/versa/CLionProjects/Signals/cmake-build-debug/CMakeFiles/Signals.dir/program1.c.obj"
-  "C:/Users/versa/CLionProjects/Signals/program2.c" "C:/Users/versa/CLionProjects/Signals/cmake-build-debug/CMakeFiles/Signals.dir/program2.c.obj"
+  "C:/Users/versa/CLionProjects/Signals/Prog1.c" "C:/Users/versa/CLionProjects/Signals/cmake-build-debug/CMakeFiles/Signals.dir/Prog1.c.obj"
+  "C:/Users/versa/CLionProjects/Signals/Prog2.c" "C:/Users/versa/CLionProjects/Signals/cmake-build-debug/CMakeFiles/Signals.dir/Prog2.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

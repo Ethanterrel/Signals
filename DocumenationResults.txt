@@ -1,0 +1,6 @@
+In 30 seconds of runtime, program 1's signal total was 5420.  Documenting
+10,000 signals took approximately 1 minute and 15 seconds. 50,000 signals took close to 8min. The time between
+signals for both SIGUSR1 and SIGUSR2 was typically between 0.0 and 0.5 seconds.
+
+Program 1 was  done asynchronously using signal() to register a signal
+was done synchronously using sigwait().
