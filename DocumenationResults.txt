@@ -1,6 +1,112 @@
-In 30 seconds of runtime, program 1's signal total was 5420.  Documenting
-10,000 signals took approximately 1 minute and 15 seconds. 50,000 signals took close to 8min. The time between
-signals for both SIGUSR1 and SIGUSR2 was typically between 0.0 and 0.5 seconds.
+Test Plan:
 
-Program 1 was  done asynchronously using signal() to register a signal
-was done synchronously using sigwait().
+-The files included for the results are select sample runs, which not match the test runs discussed here.
+
+
+
+In 30 seconds of runtime, program 1's signal total was 6768.
+
+current system time: 18:11:11
+sigusr1_sent: 828
+sigusr2_sent: 837
+sigusr1_received: 1640
+sigusr2_received: 1658
+sigusr1_report_received: 820
+sigusr2_report_received: 830
+average time between SIGUSR1: 0.000000
+average time between SIGUSR2: 0.000000
+
+current system time: 18:11:11
+sigusr1_sent: 835
+sigusr2_sent: 840
+sigusr1_received: 1654
+sigusr2_received: 1664
+sigusr1_report_received: 827
+sigusr2_report_received: 833
+average time between SIGUSR1: 0.000000
+average time between SIGUSR2: 0.000000
+
+current system time: 18:11:11
+sigusr1_sent: 843
+sigusr2_sent: 842
+sigusr1_received: 1670
+sigusr2_received: 1668
+sigusr1_report_received: 836
+sigusr2_report_received: 834
+average time between SIGUSR1: 0.000000
+average time between SIGUSR2: 32667.000000
+
+current system time: 18:11:11
+sigusr1_sent: 852
+sigusr2_sent: 843
+sigusr1_received: 1688
+sigusr2_received: 1670
+sigusr1_report_received: 844
+sigusr2_report_received: 836
+average time between SIGUSR1: 0.000000
+
+total signals: 6768cis-lclient12:~>
+
+The expected counts are SIGUSR1 = 852 and SIGUSR2 = 843 because each handler should catch one signal once. Thus the correct count should be twice the sent count.
+What was also interesting throughout was that the reporter was lagging behind such that the other signal generators would send out more
+
+signals by the time the reporter counted 10 signals it received. Even the numbers are confusing, the average should be accurate because it
+
+depends on 10 signals, and sums the time intervals for each signal type based off last occurence.
+
+
+
+
+
+Documenting 10,000 signals took approximately 1 minute and 20 seconds. The time between signals for both SIGUSR1 and SIGUSR2 was typically between 0.0 and 0.5 seconds.
+
+
+current system time: 18:18:1
+sigusr1_sent: 1258
+sigusr2_sent: 1218
+sigusr1_received: 2509
+sigusr2_received: 2426
+sigusr1_report_received: 1257
+sigusr2_report_received: 1213
+average time between SIGUSR1: 0.250000
+average time between SIGUSR2: 0.000000
+
+current system time: 18:18:1
+sigusr1_sent: 1260
+sigusr2_sent: 1226
+sigusr1_received: 2513
+sigusr2_received: 2442
+sigusr1_report_received: 1260
+sigusr2_report_received: 1220
+average time between SIGUSR1: 0.000000
+average time between SIGUSR2: 0.000000
+
+current system time: 18:18:1
+sigusr1_sent: 1260
+sigusr2_sent: 1236
+sigusr1_received: 2513
+sigusr2_received: 2462
+sigusr1_report_received: 1260
+sigusr2_report_received: 1230
+average time between SIGUSR1: 0.000000
+average time between SIGUSR2: 0.000000
+
+current system time: 18:18:1
+sigusr1_sent: 1263
+sigusr2_sent: 1243
+sigusr1_received: 2519
+sigusr2_received: 2476
+sigusr1_report_received: 1263
+sigusr2_report_received: 1237
+average time between SIGUSR1: 0.000000
+
+In this specific run, the amount of SIG1 and SIG2 usrs sent doesent seem drastically off, which seem appropriate to me based on the reporter values
+
+
+RESULTS
+The amount of signal losses in program 1 covers a wide range and can be quite random at times.
+
+I think naturally signal losses occur because of signals being discarded. When a signal comes in it is pending, and while it is waiting for the handler to receive it, any other subsequent signals of the same type is discarded. So depending on the hold up possibly with the mutex access some signals may be discarded.
+
+The mutex I used was a single mutex to access the shared global counts. If it is reading or writing, the mutex is present. I tried removing the mutex and adding more, but overall the performance is the same. While the wait time for 100000 signals is very long, if you consider an average interval of 0.05-0 seconds between signal generator repetitions, you would have 3 signals per 0.05 seconds in a perfect scenario. In order for 100000 signals to be
+sent, it would be at least 30min.
